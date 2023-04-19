@@ -1,3 +1,3 @@
 module.exports = {
-    node_env: ""
+    node_env: "d",
 }

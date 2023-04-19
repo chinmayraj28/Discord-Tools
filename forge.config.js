@@ -1,16 +1,16 @@
 module.exports = {
   packagerConfig: {
-    name: "DiscordWebhookSender",
+    name: "DiscordTools",
     icon: "./logos/logo.png",
     platform: "win32",
     arch: "x64",
-    executableName: "DiscordWebhookSender",
+    executableName: "DiscordTools",
     win32metadata: {
       CompanyName: "Chinmay Raj",
-      FileDescription: "This app is used for sending embeds to webhooks on discord.",
-      OriginalFilename: "DiscordWebhookSender.exe",
-      ProductName: "DiscordWebhookSender",
-      InternalName: "DiscordWebhookSender",
+      FileDescription: "This app has several tools for discord. Mainly related to discord bots and discord API",
+      OriginalFilename: "DiscordTools.exe",
+      ProductName: "DiscordTools",
+      InternalName: "DiscordTools",
     },
     mac: {
       category: "public.app-category.productivity",

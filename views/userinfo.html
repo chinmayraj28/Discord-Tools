@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/userinfo.css">
+    <script src="js/userinfo.js" defer></script>
+    <title>User info</title>
+</head>
+<body>
+    <div class="form-container">
+		<form id="token-form" action="#" method="post">
+			<h1>Get User Info</h1>
+
+			<label for="clientid">User ID:</label>
+			<input type="text" id="clientid" name="clientid" required>
+
+            <label for="token">Bot Token:</label>
+			<input type="text" id="token" name="token" required>
+
+			<input type="submit" value="Submit">
+		  </form>
+
+		<div class="additional-fields">
+			<h1 id="ttitle"></h1>
+            <ul>
+                <li id="i1"></li>
+                <li id="i2"></li>
+                <li id="i3"></li>
+                <li id="i4"></li>
+            </ul>
+		</div>
+	</div>
+
+</body>
+</html>
