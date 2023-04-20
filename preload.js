@@ -2,6 +2,7 @@ const { contextBridge, ipcRenderer } = require('electron');
 const config = require('./config.js')
 const fetch = require('node-fetch');
 const Toastify = require('toastify-js');
+const { alertError, alertSuccess } = require('./functions/toastify.js')
 const Discord = require('discord.js')
 const { Client, Intents, Message, Collection, MessageAttachment, ButtonInteracti, MessageActionRow, MessageButton, MessageEmbed, Permissions, Role, MessageSelectMenu, Modal, TextInputComponent } = require('discord.js');
 const mongoose = require('mongoose');
@@ -10,31 +11,6 @@ const path = require('path')
 let client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.DIRECT_MESSAGES] });
 let username;
 
-function alertError(message){
-    Toastify({
-        text: message,
-        duration: 5000,
-        close: false,
-        style: {
-          background: 'red',
-          color: 'white',
-          textAlign: 'center'
-        }
-      }).showToast();
-}
-
-function alertSuccess(message){
-    Toastify({
-        text: message,
-        duration: 5000,
-        close: false,
-        style: {
-          background: 'green',
-          color: 'white',
-          textAlign: 'center'
-        }
-      }).showToast();
-}
 
 ///////////////////////////////////////////////////////////////////////////////////
 // TOASTIFY ///////////////////////////////////////////////////////////////////////
@@ -199,5 +175,3 @@ const userInfoSystem = {
 }
 
 contextBridge.exposeInMainWorld('userInfoSystem', userInfoSystem);
-
-

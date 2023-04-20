@@ -3,11 +3,10 @@
 
 
 # Higher priority
-- 🟨 Custom Discord RPC (Basically Your Custom Discord Activity)
 
 ### Start with the bot commands 
 
-- ❌ Entertainment Commands
+- 🟨 Entertainment Commands
 
 - ❌ Moderation Commands
 

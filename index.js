@@ -34,7 +34,10 @@ const menu = [
   }, 
   ...(!isMac ? [{
     label: 'Tools',
-    submenu: [{label: 'About', click: () => createAboutWindow()}, {label: 'Webhook Sender', click: () => createWebhookWindow()}, {label: 'Userinfo', click: () => createUserInfoWindow()}]
+    submenu: [
+      {label: 'About', click: () => createAboutWindow()}, 
+      {label: 'Webhook Sender', click: () => createWebhookWindow()}, 
+      {label: 'Userinfo', click: () => createUserInfoWindow()}]
   }] : [])
 ]
 
@@ -75,6 +78,7 @@ function createUserInfoWindow() {
 
   mainwWindow.loadFile("./views/userinfo.html")
 }
+
 
 function createWebhookWindow() {
   mainwWindow = new BrowserWindow({
