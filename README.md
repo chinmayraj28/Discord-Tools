@@ -1,6 +1,6 @@
 
 # Discord-Tools By Chinmay Raj
-### **Many More Updates Coming Soon.** For more information - Take a look at the ```todo.txt``` file in the github repo.
+### **Many More Updates Coming Soon.** For more information - Take a look at the ```todo.md``` file in the github repo.
 This app has several tools for discord. Mainly related to discord bots and discord API. You can create your own bot in just a few seconds. Just a few clicks and boom! you have your own custom both with several commands. All you have to do is enter your bot token, your user ID, mongo db URL and you're good to go!
 
 
