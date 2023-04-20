@@ -16,6 +16,12 @@
 
 - ❌ Utility Commands
 
+- ❌ Music System 
+
+- ❌ Image Manupilation
+
+- ❌ Leveling System 
+
 # Lower priority
 - ❌ Options to enable and disable commands.
 
