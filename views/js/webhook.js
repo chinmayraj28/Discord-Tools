@@ -20,7 +20,7 @@ form.addEventListener('submit', async (event) => {
         }
     }catch(err){
         console.log(err)
-        alertError(`There was an error connecting to the webhook!\nError: ${err}`)
+        alertError(`There was an error connecting to the webhook!\n${err}`)
     }
     
 
